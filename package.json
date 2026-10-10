@@ -1,0 +1,33 @@
+{
+  "name": "kimi1040-tab-converter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Note-to-harmonica-tab converter for Kimi/Qimei 1040 chromatic harmonica (10 holes / 40 reeds, key C). Outputs PDF + MIDI with synced lyrics, Persian & English support.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "samples": "vite-node scripts/build-samples.ts"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.1.56",
+    "@types/node": "^26.6.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "pdfjs-dist": "^4.5.136",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vite-node": "^2.0.5",
+    "vitest": "^2.0.5"
+  }
+}
